@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bfmnnq0vb1r6g"
+path="res://.godot/imported/e98a208a-41c8-45bd-91ad-024e1884412b.png-06c3edcd67c09c9757918a6f9ed4d09e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets 2/GameAssets/sprt_pixel/layers/28ee5c16-6120-4b3b-973f-0b093effa7ce/e98a208a-41c8-45bd-91ad-024e1884412b.png"
+dest_files=["res://.godot/imported/e98a208a-41c8-45bd-91ad-024e1884412b.png-06c3edcd67c09c9757918a6f9ed4d09e.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1
