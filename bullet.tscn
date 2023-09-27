@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d1enfqepsvkc7"]
 
 [ext_resource type="Script" path="res://Player/Bullet.gd" id="1_audio"]
-[ext_resource type="Texture2D" uid="uid://c1jp4pljaklcn" path="res://Assets/PNG/Lasers/laserBlue16.png" id="2_aviii"]
+[ext_resource type="Texture2D" uid="uid://c1jp4pljaklcn" path="res://Kenny Assets/PNG/Lasers/laserBlue16.png" id="2_aviii"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k75os"]
 size = Vector2(20, 56)
@@ -15,4 +15,10 @@ texture = ExtResource("2_aviii")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_k75os")
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

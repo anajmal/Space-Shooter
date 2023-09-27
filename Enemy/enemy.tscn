@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://i0j3fgfwfyp7"]
+
+[ext_resource type="Script" path="res://Enemy/Enemy.gd" id="1_ts6x7"]
+[ext_resource type="Texture2D" uid="uid://cg38pigykijkp" path="res://Assets 2/GameAssets/SpaceShips/Enemy Ship - 1.png" id="2_ivpkj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_emj7f"]
+radius = 31.0
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_ts6x7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ivpkj")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(5, -19.9, 10.7, -15, 13.3, -15, 26, -11.5, 26, -9.3, 28.8, -1, 25.9, -1, 17, 8.8, 17, 14.8, 11.8, 20, 8, 20, 5, 16, -1.1, 15.3, -13, 21.2, -13, 17.4, -16.3, 10, -26, 1.9, -26, -1, -28.7, -10, -25.5, -10, -5, -20.2, -5, -22, 5, -22)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_emj7f")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
