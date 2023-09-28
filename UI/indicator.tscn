@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm8d334x21lt0"]
+
+[ext_resource type="Texture2D" uid="uid://bo6yl6mql4tcm" path="res://Assets 2/GameAssets/SpaceShips/ORANGE_BLUE_WHITE_-_SPACESHIP-removebg-preview.png" id="1_64a3x"]
+
+[node name="Indicator" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_64a3x")
