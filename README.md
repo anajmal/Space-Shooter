@@ -13,6 +13,7 @@ Player Laser Sound by MATRIXXX_ on freesound.org, https://freesound.org/people/M
 Enemy Laser Sound by MATRIXXX_ on freesound.org, https://freesound.org/people/MATRIXXX_/sounds/459814/
 Laser Art from https://www.kenney.nl/assets/space-shooter-redux. License - https://creativecommons.org/public-domain/cc0/
 Main Menu Background - By wirestock on https://www.freepik.com/free-photo/low-angle-shot-mesmerizing-starry-sky_12448591.htm#query=space%20background&position=4&from_view=keyword&track=ais
+Asteroids and Ship - https://guardian5.itch.io/spaceship-megapack
 ## Future Development
 
 ## Created by
