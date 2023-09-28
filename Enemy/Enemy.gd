@@ -5,7 +5,7 @@ var health = 10
 var y_positions = [100, 150, 200, 500, 550]
 var initial_position = Vector2.ZERO
 var direction = Vector2(1.5,0)
-var wobble = 30.0 
+var wobble = 15.0 
 
 
 func _ready():
@@ -25,9 +25,10 @@ func _physics_process(_delta):
 func _on_timer_timeout():
 	var Player = get_node_or_null("/root/Game/Player Container/Player")
 	var Effects = get_node_or_null("/root/Game/Effects")
-	print(Player)
-	print(Effects)
 	if Player != null and Effects != null:
+		var Enemy_Sound = get_node_or_null("/root/Game/Enemy_Sound")
+		if Enemy_Sound != null:
+			Enemy_Sound.play()
 		var bullet = Bullet.instantiate()
 		var d = global_position.angle_to_point(Player.global_position) + PI/2
 		bullet.rotation = d

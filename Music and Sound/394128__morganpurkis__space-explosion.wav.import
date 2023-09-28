@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dkvhtvg6gn6vl"
+path="res://.godot/imported/394128__morganpurkis__space-explosion.wav-9ac8a7583c288b452885bc8ed21bc11d.sample"
+
+[deps]
+
+source_file="res://Music and Sound/394128__morganpurkis__space-explosion.wav"
+dest_files=["res://.godot/imported/394128__morganpurkis__space-explosion.wav-9ac8a7583c288b452885bc8ed21bc11d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

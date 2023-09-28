@@ -59,5 +59,5 @@ func _resize():
 func reset():
 	get_tree().paused = false
 	score = 0
-	time = 30
+	time = 60
 	lives = 5
